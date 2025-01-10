@@ -1,69 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fontcity.neocities.org/hades.css?family=hades">
-    <link rel="stylesheet" href="https://fontcity.neocities.org/moon.css?family=moon">
-    <link rel="stylesheet" href="https://fontcity.neocities.org/xplor.css?family=xplor">
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fontcity.neocities.org/hades.css?family=hades"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fontcity.neocities.org/moon.css?family=moon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fontcity.neocities.org/xplor.css?family=xplor"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <title>Submit</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/featured">Featured</a>
-        <a href="submission.html">Submit</a>
-        <a href="physical.html">Physical</a>
-        <a href="intangible.html">Intangible</a>
+      <a href="/">Home</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/featured.html">Featured</a>
+      <a href="/submission.html">Submit</a>
+      <a href="/physical.html">Physical</a>
+      <a href="/intangible.html">Intangible</a>
     </nav>
     <header>
-        <h1>Submit</h1>
+      <h1>Submit</h1>
     </header>
     <div class="container">
-        <section id="about" class="about box">
-            <h2>Add a <span id="title"><strong>map</strong></span> of your own to the atlas.</h2>
-        </section>
-        <section> 
-                <form class="submit-map-form" action="/submit-map" method="POST">
-                <div class="form-info">
-                    <div class="form-column">
-                        <div class="form-group box">
-                            <label for="map-name">Map Name</label>
-                            <input type="text" id="map-name" name="map-name" required>
-                        </div>
-                        <div class="form-group box">
-                            <label for="map-type">Map Type</label>
-                            <select id="map-type" name="map-type" required>
-                                <option value="physical">Physical</option>
-                                <option value="tangible">Tangible</option>
-                            </select>
-                        </div>
-                        <div class="form-group box">
-                            <label for="further-reading">Further Reading (Optional)</label>
-                            <input type="url" id="further-reading" name="further-reading" placeholder="https://example.com">
-                        </div>
-                        <div class="form-group box">
-                            <label for="input">Upload an Image</label>
-                            <input type="url" id="image" name="image" placeholder="https://example.com">
-                        </div>
-                    </div>
-                    <div class="form-column">
-                        <div class="form-group box">
-                            <label for="description">Description</label>
-                            <textarea id="description" name="description" required></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group box">
-                    <input type="submit" value="Submit Map">
-                </div>
-                </form>
-        </section>
+      <section id="about" class="about box">
+        <h2>
+          Add a <span id="title"><strong>map</strong></span> of your own to the
+          atlas.
+        </h2>
+      </section>
+      <section>
+        <form class="submit-map-form" action="/submit-map" method="POST">
+          <div class="form-info">
+            <div class="form-column">
+              <div class="form-group box">
+                <label for="map-name">Map Name</label>
+                <input type="text" id="map-name" name="map-name" required />
+              </div>
+              <div class="form-group box">
+                <label for="map-type">Map Type</label>
+                <select id="map-type" name="map-type" required>
+                  <option value="physical">Physical</option>
+                  <option value="tangible">Tangible</option>
+                </select>
+              </div>
+              <div class="form-group box">
+                <label for="further-reading">Further Reading (Optional)</label>
+                <input
+                  type="url"
+                  id="further-reading"
+                  name="further-reading"
+                  placeholder="https://example.com"
+                />
+              </div>
+              <div class="form-group box">
+                <label for="input">Upload an Image</label>
+                <input
+                  type="url"
+                  id="image"
+                  name="image"
+                  placeholder="https://example.com"
+                />
+              </div>
+            </div>
+            <div class="form-column">
+              <div class="form-group box">
+                <label for="description">Description</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-group box">
+            <input type="submit" value="Submit Map" />
+          </div>
+        </form>
+      </section>
     </div>
     <footer>
-        <p>Created and run by <a href="https://goldfathom.tumblr.com/">JKL</a></p>
+      <p>Created and run by <a href="https://goldfathom.tumblr.com/">JKL</a></p>
     </footer>
-</body>
+  </body>
 </html>
