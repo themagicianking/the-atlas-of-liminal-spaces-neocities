@@ -84,6 +84,10 @@ h2 {
   font-size: 50px;
 }
 
+p, label, input{
+  font-family: 'syne mono', sans-serif;
+}
+
 h3 {
   font-family: 'Moon', sans-serif;
   background: linear-gradient(
@@ -102,10 +106,17 @@ footer a {
   color: #daa520;
   text-decoration: none;
 }
+
+.box a {
+  color: rgb(232, 122, 206, 0.9);
+  font-family: 'syne mono', sans-serif;
+  text-shadow: 0 1px 0px rgb(0, 0, 0);
+  text-decoration: none;
+}
 img {
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   margin: 1em auto;
   border-radius: 10px; /* Rounded corners for images */
 }
@@ -120,6 +131,32 @@ section {
   margin-left: 170px; /* Adjusted space for the fixed nav and header */
   width: calc(100% - 245px); /* Adjust width for the nav and header */
 }
+.map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  width: 48%;
+  margin: 0 1em 2em 2em;
+}
+
+.description {
+  width: 48%;
+  margin: 0 2em 2em 1em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info .box {
+  margin-top: 0;
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -176,7 +213,7 @@ input {
   border-width: thin;
   background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
   color: white;
-  font-family: "xplor", sans-serif;
+  font-family: 'xplor', sans-serif;
 }
 
 input {
@@ -196,7 +233,8 @@ footer {
   font-family: 'Hades', sans-serf;
 }
 
-button, select {
+button,
+select {
   background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
   color: white;
   font-family: 'Moon', sans-serif;
@@ -214,4 +252,9 @@ button:hover {
     rgba(250, 255, 92, 1) 50%,
     rgba(0, 212, 255, 1) 100%
   );
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
 }

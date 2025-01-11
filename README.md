@@ -8,7 +8,6 @@ These are the source files for my neocities site.
 - Location
 - Link to said location on Google maps (or to search for "nearest x" if location is not one place)
 - Further reading (e.g. Wikipedia page, website run by organization that owns the place, etc)
-- People(s) associated with the map
 - Related maps/"see also"
 - Map creator
 - Date the entry was posted
