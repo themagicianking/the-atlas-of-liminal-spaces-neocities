@@ -46,7 +46,7 @@ nav {
 }
 nav a {
   color: black;
-  padding: .25em;
+  padding: 0.25em;
   margin: 1em;
   text-decoration: none;
   writing-mode: vertical-rl; /* Make text vertical */
@@ -83,6 +83,21 @@ h2 {
   font-family: 'Moon', sans-serif;
   font-size: 50px;
 }
+
+h3 {
+  font-family: 'Moon', sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(232, 122, 206, 1) 0%,
+    rgba(250, 255, 92, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  width: fit-content;
+}
+
 footer a {
   color: #daa520;
   text-decoration: none;
@@ -106,6 +121,9 @@ section {
   width: calc(100% - 245px); /* Adjust width for the nav and header */
 }
 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.5); /* White transparent background */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -150,14 +168,21 @@ section {
 label {
   margin: 0.5em;
 }
-textarea {
+textarea,
+input {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-width: thin;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+  color: white;
+  font-family: "xplor", sans-serif;
 }
+
 input {
   border-radius: 5px;
 }
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -169,4 +194,24 @@ footer {
 }
 #title {
   font-family: 'Hades', sans-serf;
+}
+
+button, select {
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+  color: white;
+  font-family: 'Moon', sans-serif;
+  padding: 1em;
+  border-radius: 10px;
+  border-style: none;
+}
+
+button:hover {
+  color: black;
+  background: rgb(232, 122, 206);
+  background: linear-gradient(
+    250deg,
+    rgba(232, 122, 206, 1) 0%,
+    rgba(250, 255, 92, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
