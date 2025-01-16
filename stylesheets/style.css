@@ -1,5 +1,5 @@
 body {
-  font-family: 'xplor', sans-serif;
+  font-family: 'syne-mono', sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -44,7 +44,8 @@ nav {
   align-items: center;
   padding: 1em;
 }
-nav a {
+nav a, .nav {
+  background-color: transparent;
   color: black;
   padding: 0.25em;
   margin: 1em;
