@@ -32,23 +32,36 @@ const SUBMIT_LINK = document.getElementById('submit-link')
 const PHYSICAL_LINK = document.getElementById('physical-link')
 const INTANGIBLE_LINK = document.getElementById('intangible-link')
 
-function buildPage(page) {
+function buildPage() {
+  let page
+  switch (this.id) {
+    case 'home-link':
+      page = HOME
+      console.log(this.id)
+      break
+    case 'submit-link':
+      page = SUBMISSION
+      console.log(this.id)
+      break
+    case 'physical-link':
+      page = PHYSICAL
+      console.log(this.id)
+      break
+    case 'intangible-link':
+      page = INTANGIBLE
+      console.log(this.id)
+      break
+    default:
+      page = HOME
+  }
   PAGE_HEADER.textContent = page.title
   ABOUT_CONTENT.innerHTML = page.about
   ABOUT_CONTAINER.appendChild(ABOUT_CONTENT)
 }
 
-buildPage(HOME)
+buildPage()
 
-HOME_LINK.addEventListener('click', () => {
-  buildPage(HOME)
-})
-SUBMIT_LINK.addEventListener('click', () => {
-  buildPage(SUBMISSION)
-})
-PHYSICAL_LINK.addEventListener('click', () => {
-  buildPage(PHYSICAL)
-})
-INTANGIBLE_LINK.addEventListener("click", () => {
-  buildPage(INTANGIBLE)
-})
+HOME_LINK.addEventListener('click', buildPage)
+SUBMIT_LINK.addEventListener('click', buildPage)
+PHYSICAL_LINK.addEventListener('click', buildPage)
+INTANGIBLE_LINK.addEventListener('click', buildPage)
