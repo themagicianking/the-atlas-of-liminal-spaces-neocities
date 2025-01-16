@@ -44,7 +44,8 @@ nav {
   align-items: center;
   padding: 1em;
 }
-nav a, .nav {
+nav a,
+.nav {
   background-color: transparent;
   color: black;
   padding: 0.25em;
@@ -85,7 +86,9 @@ h2 {
   font-size: 50px;
 }
 
-p, label, input{
+p,
+label,
+input {
   font-family: 'syne mono', sans-serif;
 }
 
@@ -187,6 +190,27 @@ section {
   flex-direction: column;
   width: 100%;
 }
+
+.form-inputs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column-one {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-inputs .box {
+  margin: 1em;
+}
+
+.column-two {
+  width: 50%;
+}
+
 .form-info {
   display: flex;
 }

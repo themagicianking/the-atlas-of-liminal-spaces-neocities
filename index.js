@@ -37,19 +37,15 @@ function buildPage() {
   switch (this.id) {
     case 'home-link':
       page = HOME
-      console.log(this.id)
       break
     case 'submit-link':
       page = SUBMISSION
-      console.log(this.id)
       break
     case 'physical-link':
       page = PHYSICAL
-      console.log(this.id)
       break
     case 'intangible-link':
       page = INTANGIBLE
-      console.log(this.id)
       break
     default:
       page = HOME

@@ -41,20 +41,20 @@
       </section>
       <section>
         <form class="submit-map-form" action="/submit-map" method="POST">
-          <div class="form-info">
-            <div class="form-column">
-              <div class="form-group box">
+          <div class="form-inputs">
+            <div class="column-one">
+              <div class="box">
                 <label for="map-name">Map Name</label>
                 <input type="text" id="map-name" name="map-name" required />
               </div>
-              <div class="form-group box">
+              <div class="box">
                 <label for="map-type">Map Type</label>
                 <select id="map-type" name="map-type" required>
                   <option value="physical">Physical</option>
                   <option value="tangible">Tangible</option>
                 </select>
               </div>
-              <div class="form-group box">
+              <div class="box">
                 <label for="further-reading">Further Reading (Optional)</label>
                 <input
                   type="url"
@@ -63,7 +63,7 @@
                   placeholder="https://example.com"
                 />
               </div>
-              <div class="form-group box">
+              <div class="box">
                 <label for="input">Upload an Image</label>
                 <input
                   type="url"
@@ -73,18 +73,12 @@
                 />
               </div>
             </div>
-            <div class="form-column">
-              <div class="form-group box">
-                <label for="description">Description</label>
-                <textarea
-                  id="description"
-                  name="description"
-                  required
-                ></textarea>
-              </div>
+            <div class="column-two box">
+              <label for="description">Description</label>
+              <textarea id="description" name="description" required></textarea>
             </div>
           </div>
-          <div class="form-group box">
+          <div class="box">
             <button type="submit" value="Submit Map">Submit</button>
           </div>
         </form>
